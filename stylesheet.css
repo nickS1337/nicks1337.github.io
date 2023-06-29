@@ -1,0 +1,1193 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter";
+    letter-spacing: 1px;
+}
+
+.green {
+    color: #24FF00;
+}
+
+.red {
+    color: #FF0000;
+}
+
+.full-panel {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+#mobile-detected-inner {
+    transform: scale(2.5);
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+#mobile-detected {
+    position: fixed;
+    display: none;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #720000;
+    color: #fff;
+    z-index: 999;
+}
+
+#mobile-detected-header {
+    font-size: 35px;
+    font-family: "Ubuntu";
+}
+
+#mobile-detected-subtitle {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+#mobile-detected-inner {
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#landing-panel {
+    /* background-color: #070030; */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("pics/sultan_sunset.jpg");
+}
+
+#landing-panel-behind {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #050024;
+    filter: blur(300px);
+    opacity: 0.85;
+    height: 100%;
+    width: 100%;
+}
+
+#landing-panel-inner {
+    position: relative;
+    width: 70%;
+    left: 50%;
+    padding: 25px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    z-index: 995;
+}
+
+#navigator {
+    position: fixed;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    z-index: 999;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    text-align: center;
+}
+
+#navigator-logo {
+    position: relative;
+    height: 40px;
+    padding: 0px;
+    width: 30px;
+    background-image: url("pics/ns_w.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0px;
+}
+
+.navigator-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 18.5px;
+    color: #fff;
+    font-family: "Ubuntu";
+    font-weight: 400;
+}
+
+
+
+/* start section tracker stuff */
+
+#section-tracker {
+    position: fixed;
+    z-index: 999;
+    width: 20px;
+    height: 20px;
+    left: 30px;
+    top: 40%;
+}
+
+.section-tracker-item {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 20px;
+    border: 0.2em solid rgb(114, 114, 114);
+    margin-bottom: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.section-tracker-item:hover {
+    background-color: rgb(114, 114, 114);
+}
+
+/* end section tracker stuff 
+===
+===
+===
+===
+=== */
+/* welcome pane stuff */
+#welcome-pane {
+    position: relative;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    padding-top: 185px;
+    padding-bottom: 70px;
+    text-align: left;
+}
+
+#hello-txt {
+    color: #706B8D;
+    font-weight: 500;
+    font-size: 55px;
+}
+
+#name-txt {
+    color: #fff;
+    font-size: 85px;
+    margin-top: -10px;
+    font-family: "Ubuntu";
+    font-weight: 400;
+}
+
+#welcome-tags {
+    position: relative;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.welcome-tag {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+    font-size: 17px;
+    color: #AFA1FF;
+    background-color: #7468BA;
+    font-family: "Roboto Mono";
+}
+
+#welcome-description {
+    position: relative;
+    width: 100%;
+    color: #D6D6D6;
+    font-size: 25px;
+    margin-top: 50px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+#download-cv, #send-email {
+    position: relative;
+    padding: 15px;
+    width: fit-content;
+    border-radius: 6px;
+    letter-spacing: 0.75px;
+    background-color: #321ea1;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+#download-cv-icon, #send-email-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    background-image: url('pics/download_w.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#download-cv-txt, #send-email-txt {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#contact-asd {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: #ccc;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* end welcome pane */
+
+.divider {
+    position: relative;
+    width: 100%;
+    background-image: url("pics/melb.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-burn;
+}
+
+#divider-contents {
+    position: relative;
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    font-size: 27px;
+    color: #fff;
+}
+
+#divider-inner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #070030;
+    backdrop-filter: blur(50px);
+    opacity: 0.75;
+}
+
+#divider-month, #contactd-divider-date {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Ubuntu";
+}
+
+#divider-availability {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+/* start about stuff */
+
+#about {
+    background-color: #151517;
+    color: #fff;
+    border-bottom: 0.3em solid #08080c;
+    border-top: 0.3em solid #08080c;
+}
+
+#about-inner {
+    position: relative;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    padding: 25px;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    text-align: left;
+}
+
+#about-header {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about-header-txt {
+    position: relative;
+    font-size: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-family: "Ubuntu";
+}
+
+.about-header-img {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 80px;
+    width: 140px;
+    margin-left: 10px;
+    background-image: url("pics/nicholas_w.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#about-description {
+    position: relative;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+#competent-title {
+    position: relative;
+    color: #fff;
+    font-family: "Ubuntu";
+    text-align: center;
+    font-size: 30px;
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
+
+#container-competencies {
+    position: relative;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.competency {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+    margin-right: 15px;
+    height: fit-content;
+    border-radius: 15px;
+    background: #322778;
+    box-shadow: 0px 8px 27px 5px rgba(0, 0, 0, 0.39);
+}
+
+.competency-top {
+    position: relative;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    font-family: "Ubuntu";
+}
+
+.competency-bottom {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: #1A1343;
+}
+
+.competency-name {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.competency-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    height: 35px;
+    width: 35px;
+    float: right;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.competency-bottom {
+    box-sizing: border-box;
+    padding: 25px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.competency-bottom-desc {
+    font-weight: 350;
+    font-family: "Roboto";
+}
+
+.core-competencies-txt {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.core-compitency {
+    position: relative;
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    width: fit-content;
+    display: inline-block;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    background-color: #5A48C0;
+    color: #c9c9c9;
+    cursor: pointer;
+    font-family: "Roboto Mono";
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+
+#frontend { background-color: #322778; }
+#frontend-icon { 
+    background-image: url("pics/pencil_w.png"); 
+    transition: 0.5s ease all;
+    animation: pencilrotate 1.5s infinite;
+}
+
+#backend { background-color: #787027; }
+#backend-bottom { background-color: #3C4313; }
+.backendC { background-color: #5C671E; }
+#backend-icon { 
+    background-image: url("pics/cog_w.png"); 
+    transition: 0.5s ease all;
+    animation: cogrotate 1s infinite;
+}
+
+#comms { background-color: #782727; }
+#comms-bottom { background-color: #431313; }
+.commsC { background-color: #C04848; }
+#comms-icon { background-image: url("pics/comms_w.png");  }
+
+@keyframes cogrotate {
+
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(180deg); }
+
+}
+
+@keyframes pencilrotate {
+
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(25deg); }
+    50% { transform: rotate(-25deg); }
+    75% { transform: rotate(15deg); }
+    100% { transform: rotate(0deg); }
+
+}
+
+/* end about stuff
+===
+===
+===
+===
+=== */
+/* start latest-project stuff */
+
+#latest-project {
+    position: relative;
+    background-color: #060027;
+    border-top: 0.3em solid #030019;
+    /* border-bottom: 0.3em solid #030019; */
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+#latest-project-inner {
+    position: relative;
+    width: fit-content;
+    left: 50%;
+    padding: 25px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+}
+
+#latest-project-txt {
+    position: relative;
+    color: #fff;
+    font-family: "Ubuntu";
+    font-size: 35px;
+}
+
+#latest-project-left, #latest-project-right {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#latest-project-right {
+    overflow-wrap: break-word;
+    max-width: 600px;
+    margin-left: 25px;
+}
+
+#laptop-showcase1 {
+    position: relative;
+    height: 420px;
+    width: 670px;
+    background-image: url("pics/screencapture.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#latest-project-date {
+    position: relative;
+    font-size: 23px;
+    color: #CCCCCC;
+    font-family: "Roboto";
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.project-tag {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px !important;
+    padding: 5px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-radius: 6px;
+    letter-spacing: 0.3px;
+    font-weight: 300;
+    font-family: "Roboto Mono";
+}
+
+#latest-project-tags {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#latest-project-description {
+    position: relative;
+    font-family: "Roboto";
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* end latest-project stuff
+===
+===
+===
+===
+=== */
+/* start portfolio stuff */
+
+#portfolio { 
+    background-color: #060027; 
+    border-bottom: 0.3em solid #030019;
+}
+
+#portfolio-inner {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    padding: 25px;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+}
+
+#portfolio-header {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 35px;
+    font-family: "Ubuntu";
+}
+
+#portfolio-subtext {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Roboto";
+}
+
+#portfolio-inner-container {
+    position: relative;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    text-align: center;
+}
+
+.portfolio-tile {
+    position: relative;
+    display: inline-block;
+    /* background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("pics/sultan_city1.jpg"); */
+    border-radius: 25px;
+    box-sizing: border-box;
+    height: 250px;
+    width: 100%;
+    cursor: pointer;
+    vertical-align: top;
+    color: #fff;
+    font-size: 45px;
+    overflow: hidden;
+    transition: 0.4s ease all;
+    margin-bottom: 15px;
+    background-color: #ccc;
+}
+
+.portfolio-row {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.portfolio-tile:hover {
+    height: 740px;
+}
+
+.porfolio-tile:hover .portfolio-behind-overlay {
+    opacity: 0;
+}
+
+.portfolio-tile-top, .portfolio-tile-cover {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 850px;
+}
+
+.portfolio-vid {
+    position: relative;
+    top: 0px;
+    background-size: cover;
+    background-position: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.portfolio-tile-cover {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio-behind-overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color: #070030;
+    opacity: 0.45;
+}
+
+.portfolio-infront-cover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 35px;
+    z-index: 50;
+    text-align: left;
+}
+
+.portfolio-tile-name {
+    position: relative;
+    font-family: "Ubuntu";
+    font-size: 25px;
+}
+
+.portfolio-tile-date {
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 400;
+    color: #cacaca;
+}
+
+.portfolio-tile-tag {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px !important;
+    padding: 5px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-radius: 6px;
+    letter-spacing: 0.3px;
+    font-weight: 300;
+    font-family: "Roboto Mono";
+    color: rgb(230, 230, 230);
+}
+
+/* end portfolio stuff
+===
+===
+===
+===
+=== */
+/* start contact stuff */
+
+#contact {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+#send-email-icon {
+    height: 20px;
+    width: 20px;
+    background-image: url("pics/mail.png");
+}
+
+#contactd-divider-date {
+    margin-right: 25px;
+}
+
+#contactd-divider-date, #contactd-divider-email {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#divider2 {
+    background-image: url("pics/sultan_city2.jpg");
+}
+
+/* end contact stuff
+===
+===
+===
+===
+=== */
+/* start lets-connect stuff */
+
+#lets-connect {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: #151517;
+    border-bottom: 0.3em solid #030019;
+}
+
+.lc-left, .lc-right {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    height: 100%;
+    padding-top: 55px;
+    padding-bottom: 65px;
+}
+
+.lc-left {
+    width: 50%;
+    height: fit-content;
+    vertical-align: middle  ;
+    text-align: right;
+    padding: 100px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.lc-right {
+    width: 50%;
+    background-image: url("pics/sultan_city2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.lc-header {
+    position: relative;
+    font-family: "Ubuntu";
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 25px;
+    height: 50px;
+    width: 200px;
+    background-image: url("pics/lets_connect_w.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lc-header-new {
+    position: relative;
+    font-family: "Ubuntu";
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.lc-subheader {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 300;
+    color: #ccc;
+}
+
+.lc-email {
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 15px;
+    background-color: #321ea1;
+}
+
+.lc-email-icon {
+    position: relative;
+    width: 40px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("pics/email_w.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lc-email-txt {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-weight: 300;
+    font-family: "Ubuntu";
+    font-size: 20px;
+}
+
+.divider-abc {
+    position: relative;
+    height: 25px;
+    width: 100%;
+    background-image: url("pics/sultan_city2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* border-top: 0.3em solid #030019;
+    border-bottom: 0.3em solid #030019; */
+    box-sizing: border-box;
+}
+
+.divider-abc-inner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: #040019;
+    box-sizing: border-box;
+    opacity: 0.6;
+}
+
+.lc-tiles-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25px;
+}
+
+.lc-tile {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 300px;
+    width: 200px;
+    margin-right: 7.5px;
+    border-radius: 25px;
+    /* background-image: url("pics/sultan_city2.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    transition: 0.3s ease all;
+    background-color: #321ea1;
+}
+
+.lc-tile-link {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    background-image: url("pics/external_w.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+}
+
+.lc-tile:hover {
+    transform: scale(1.2);
+    z-index: 50;
+}
+
+.lc-tile:hover .lc-tile-text, .lc-tile:hover .lc-tile-link {
+    opacity: 1;
+}
+
+.lc-tile:hover .lc-tile-background {
+    background-image: linear-gradient(to right bottom, #81008e, #77008e, #6d008e, #62008e, #56008e, #491491, #3b1f94, #292795, #0f3597, #004096, #004993, #00518e);
+    opacity: 0.85;
+}
+
+#github:hover .lc-tile-background {
+    opacity: 0.85;
+}
+
+#github-background { background-color: #212733; }
+.github-txt {
+    position: absolute;
+    height: 100%;
+    width: 140%;
+    left: 0%;
+    top: 0%;
+    font-family: "Roboto Mono";
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    color: rgb(141, 134, 134) !important;
+}
+
+#linkedin:hover .lc-tile-background {
+    background-image: linear-gradient(to right bottom, #768e00, #7f8300, #857900, #896e00, #8c6400, #8d5c00, #8e5400, #8f4b00, #8f4200, #8f3800, #8f2d00, #8e1f00);
+    opacity: 0.85;
+}
+
+.lc-tile-background {
+    position: absolute;
+    height: 115%;
+    transition: 0.2s ease all;
+    width: 115%;
+    top: -7.5%;
+    left: -7.5%;
+    box-sizing: border-box;
+    background-color: #212733;
+    opacity: 0.55;
+    backdrop-filter: blur(20px);
+}
+
+.lc-tile-top {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    box-sizing: border-box;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.lc-tile-icon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+
+.lc-tile-text {
+    color: #ccc;
+    font-family: "Ubuntu";
+    font-size: 17px;
+    opacity: 0;
+}
+
+/* end lets-connect stuff
+===
+===
+===
+===
+=== */
+/* start footer stuff */
+
+#footer {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    /* background-image: url("pics/sultan_city3.jpg"); */
+    background-color: #050023;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-top: 0.3em solid #030019;
+    background-image: url("pics/linez.png");
+}
+
+.footer-inner {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#footer-blur {
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    opacity: 1;
+}
+
+.footer-column {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: fit-content;
+    height: 300px;
+    max-width: 550px;
+    padding: 40px;
+    padding-left: 0px;
+    margin-left: 35px;
+    border-right: 0.2em solid #14131d;
+    /* border-bottom: 0.2em solid #14131d; */
+    color: #fff;
+    letter-spacing: normal;
+}
+
+.footer-column-header {
+    position: relative;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #7e71be;
+    font-size: 25px;
+}
+
+.footer-column-text {
+    margin-bottom: 2px;
+    color: #ccc;
+    font-family: "Inter";
+    letter-spacing: normal;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+#footer-open-work {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#sultan-credits {
+    color: #ccc;
+    font-size: 15px;
+}
+
+#footer-middle {
+    width: fit-content;
+    max-width: 600px;
+}
+
+.cringe-quote {
+    position: relative;
+    font-family: "Ubuntu";
+    color: #cdc8e7;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.random-divider {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    background-image: url("pics/sultan_city4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* end footer stuff
+===
+===
+===
+===
+=== */
+
+/*
+ ===
+ ===
+ ===
+ ===
+ ===
+ ===
+ ===
+ ===
+ start of adjustments for mobile devices
+*/
+
+@media only screen and (max-width: 600px){
+
+    .competency {
+        display: block;
+        background-color: #ff0000 !important;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}

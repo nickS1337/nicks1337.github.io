@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="nicholas smith's web development portfolio" />
+    <meta name="keywords" content="nicholas, smith, web developer, hire, freelance, swinburne, technology" />
+    <meta name="author" content="Nicholas Smith" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- scripts and stylesheets -->
+    <link rel="stylesheet" href="stylesheet.css" />
+
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <title>Nicholas Smith | Portfolio</title>
+
+</head>
+
+<body>
+
+    <div id="mobile-detected">
+        <div id="mobile-detected-inner">
+            <div style="font-weight: bold; font-size: 45px; font-family: 'Ubuntu'; margin-bottom: 25px;">:(</div>
+            <div id="mobile-detected-header" style="font-weight: bold;">My apologies<br></div>
+            <div id="mobile-detected-subtitle">I have not yet added support for mobile devices. <br>Please reopen this site on a desktop.<br></div>
+            <div style="font-size: 17px; color: #ccc; margin-top: 20px;">I promise I will add mobile support soon!</div>
+        </div>
+    </div>
+
+    <!-- <div id="section-tracker">
+        <div id="section-1" class="section-tracker-item"></div>
+        <div id="section-2" class="section-tracker-item"></div>
+        <div id="section-3" class="section-tracker-item"></div>
+        <div id="section-4" class="section-tracker-item"></div>
+        <div id="section-4" class="section-tracker-item"></div>
+    </div> -->
+
+    <div id="navigator">
+        <div class="navigator-item" id="navigator-logo"></div>
+        <a href="#landing-panel"><div class="navigator-item" id="nav-landing-panel">Welcome</div></a>
+        <a href="#about" style="text-decoration: none; color: #fff;"><div class="navigator-item" id="nav-about">About me</div></a>
+        <a href="#latest-project" style="text-decoration: none; color: #fff;"><div class="navigator-item" id="nav-latest-project">Latest project</div></a>
+        <a href="#portfolio" style="text-decoration: none; color: #fff;"><div class="navigator-item" id="nav-portfolio">Portfolio</div>
+        <a href="#lets-connect" style="text-decoration: none; color: #fff;"><div class="navigator-item" id="nav-lets-connect">Contact</div></a>
+    </div>
+    
+    <div class="full-panel" id="landing-panel">
+
+        <div id="landing-panel-behind"></div>
+
+        <div id="landing-panel-inner">
+            
+            <div id="welcome-pane">
+
+                <div id="hello-txt">Hello! I'm</div>
+                <div id="name-txt">nicholas smith.</div>
+                <div id="welcome-tags">
+                    <div class="welcome-tag">student</div>
+                    <div class="welcome-tag">freelancer</div>
+                    <div class="welcome-tag">developer</div>
+                    <div class="welcome-tag">web fullstack</div>
+                </div>
+                
+                <div id="welcome-description">
+                    A keen software developer. I work with all things web, and chase projects that inspire me.<br><br>Based in Melbourne, Australia. Currently studying computer science at Swinburne University. 
+                </div>
+
+                <div id="welcome-buttons">
+                    
+                    <a href="CV.pdf" target="_blank" style="color: #fff; text-decoration: none;">
+                        <div id="download-cv">
+                            <div id="download-cv-icon"></div>
+                            <div id="download-cv-txt">Download CV</div>
+                        </div>
+                    </a>
+
+                    <a href="#lets-connect" style="color: #fff; text-decoration: none;">
+                        <div id="contact-asd">Contact me</div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="full-panel" id="about">
+
+        <div id="about-inner">
+
+            <div id="about-header">
+                <div class="about-header-txt">Who is</div>
+                <div class="about-header-img"></div>
+                <div class="about-header-txt">?</div>
+            </div>
+            <div id="about-description">Nicholas has mainly been a fullstack web developer with over two years of experience.<br> He's dabbled here and there with other technologies as well. </div>
+            
+            <div id="competent-title">My Competencies</div>
+
+            <div id="container-competencies">
+                <div class="competency" id="frontend">
+                    <div class="competency-top">
+                        <div class="competency-name">Frontend <br>Development</div>
+                        <div class="competency-icon" id="frontend-icon"></div>
+                    </div>
+                    <div class="competency-bottom">
+                        <div class="competency-bottom-desc">Usually coding from scratch, he values simple and easy to navigate designs and user interfaces. <br><br>I like taking a hands-on approach as well, with implementing user interactivity wherever possible to retain user attention.</div>
+                        <div class="core-competencies">
+                            <div class="core-competencies-txt">Core competencies:</div>
+                        </div>
+                        <div class="core-competencies-container">
+                            <div class="core-compitency">html</div>
+                            <div class="core-compitency">css</div>
+                            <div class="core-compitency">javascript</div>
+                            <div class="core-compitency">jquery</div>
+                            <div class="core-compitency">chart.js</div>
+                            <div class="core-compitency">design</div>
+                            <div class="core-compitency">wireframing</div>
+                            <div class="core-compitency">interactive-design</div>
+                            <div class="core-compitency">bootstrap</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="competency" id="comms">
+                    <div class="competency-top">
+                        <div class="competency-name">Communicating and <br>Listening</div>
+                        <div class="competency-icon" id="comms-icon"></div>
+                    </div>
+                    <div class="competency-bottom" id="comms-bottom">
+                        <div class="competency-bottom-desc">In addition to my technical skills, I pride myself on improving my communication and listening skills.<br><br>I am able to relay my thoughts effectively, especially to those who may lack the technical expertise to understand all layers of a certain project. <br><br> I have found that this skill is integral to maintaining a good company culture.</div>
+                        <div class="core-competencies">
+                            <div class="core-competencies-txt">Core competencies:</div>
+                        </div>
+                        <div class="core-competencies-container">
+                            <div class="core-compitency commsC">active listening</div>
+                            <div class="core-compitency commsC">company culture</div>
+                            <div class="core-compitency commsC">effective communication</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="competency" id="backend">
+                    <div class="competency-top">
+                        <div class="competency-name">Backend <br>Development</div>
+                        <div class="competency-icon" id="backend-icon"></div>
+                    </div>
+                    <div class="competency-bottom" id="backend-bottom">
+                        <div class="competency-bottom-desc">I value safe, fast, and efficient web systems. I primarily work as a full-stack developer, dealing mostly with data processing for user interfaces.<br><br>I believe backend development at its core should enhance the user experience.</div>
+                        <div class="core-competencies">
+                            <div class="core-competencies-txt">Core competencies:</div>
+                        </div>
+                        <div class="core-competencies-container">
+                            <div class="core-compitency backendC">python</div>
+                            <div class="core-compitency backendC">javascript</div>
+                            <div class="core-compitency backendC">php</div>
+                            <div class="core-compitency backendC">webservers</div>
+                            <div class="core-compitency backendC">node.js</div>
+                            <div class="core-compitency backendC">socket.io</div>
+                            <div class="core-compitency backendC">sockets</div>
+                            <div class="core-compitency backendC">file-storage</div>
+                            <div class="core-compitency backendC">postgresql</div>
+                            <div class="core-compitency backendC">mysql</div>
+                            <div class="core-compitency backendC">nosql</div>
+                            <div class="core-compitency backendC">mongodb</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="divider">
+        <div id="divider-inner"></div>
+        <div id="divider-contents">
+            <div id="divider-month">Loading</div>
+            <div id="divider-availability" class="red">Fully booked</div>
+        </div>
+    </div>
+
+    <div class="full-panel" id="latest-project">
+        <div id="latest-project-inner">
+            <div id="latest-project-left">
+                <div id="laptop-showcase1"></div>
+            </div>
+            <div id="latest-project-right">
+                <div id="latest-project-txt">Latest Project</div>
+                <div id="latest-project-date">August 2022</div>
+
+                <div id="latest-project-tags">
+                    <div class="project-tag" style="background-color: #990000; color: #E7E7E7;">closed-source</div>
+                    <div class="project-tag" style="background-color: #660404; color: #ACACAC;">contract</div>
+                </div>
+                <div id="latest-project-description">
+                    Broker V1 is a web platform created for the purpose of technical analysis for financial securities. It was developed for independent financial analysts based in Jakarta, Indonesia.
+                    <br><br>
+                    I served as the solo fullstack developer in our business unit.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="full-panel" id="portfolio">
+
+        <div id="portfolio-inner">
+
+            <div id="portfolio-header">Portfolio</div>
+            <!-- <div id="portfolio-subtext">I hope you enjoy my work :)</div> -->
+
+            <div id="portfolio-inner-container">
+
+                <div class="portfolio-row">
+
+                    <div class="portfolio-tile">
+                        <div class="portfolio-tile-top">
+                            <video class="portfolio-vid" autoplay loop muted>
+                                <source src="vids/broker.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <a href="http://brokerv1c.herokuapp.com" target="_blank"><div class="portfolio-tile-cover">
+                            <div class="portfolio-infront-cover">
+                                <div class="portfolio-tile-name" style="color: #fff;">Broker V1</div>
+                                <div class="portfolio-tile-date">--</div>
+                                <div class="portfolio-tile-tags">
+                                    <div class="portfolio-tile-tag" style="background-color: #16a700;">public access available</div>
+                                    <div class="portfolio-tile-tag" style="background-color: #a76d00;">site in beta</div>
+                                </div>
+                                <div class="portfolio-tile-series"></div>
+                            </div>
+                            <div class="portfolio-behind-overlay"></div>
+                        </div></a>
+
+                    </div>
+                    
+                    <div class="portfolio-tile">
+                        <div class="portfolio-tile-top">
+                            <video class="portfolio-vid" autoplay loop muted>
+                                <source src="vids/ordino2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <a href="pandemic-safe-monash/index.html" target="_blank"><div class="portfolio-tile-cover">
+                            <div class="portfolio-infront-cover" style="color: #fff;">
+                                <div class="portfolio-tile-name">PandemicSafe - Concept Website<br>(Part of university studies)</div>
+                                <div class="portfolio-tile-date">--</div>
+                                <div class="portfolio-tile-tags">
+                                    <div class="portfolio-tile-tag" style="background-color: #a76d00;">see my github page</div>
+                                </div>
+                                <div class="portfolio-tile-series"></div>
+                            </div>
+                            <div class="portfolio-behind-overlay"></div>
+                        </div></a>
+                    </div>
+
+                    <div class="portfolio-tile">
+                        <div class="portfolio-tile-top">
+                            <video class="portfolio-vid" autoplay loop muted>
+                                <source src="vids/crocjump.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <a href="crocjump-monash/index.html" style="color: #fff;" target="_blank"><div class="portfolio-tile-cover">
+                            <div class="portfolio-infront-cover">
+                                <div class="portfolio-tile-name">CrocJump - Concept Website<br>(Part of university studies)</div>
+                                <div class="portfolio-tile-date">--</div>
+                                <div class="portfolio-tile-tags">
+                                    <div class="portfolio-tile-tag" style="background-color: #a76d00;">see my github page</div>
+                                </div>
+                                <div class="portfolio-tile-series"></div>
+                            </div>
+                            <div class="portfolio-behind-overlay"></div>
+                        </div></a>
+                    </div>
+
+                    <div class="portfolio-tile">
+                        <div class="portfolio-tile-top">
+                            <video class="portfolio-vid" autoplay loop muted>
+                                <source src="vids/ordino.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="portfolio-tile-cover">
+
+                            <a href="http://127.0.0.1:27015/" target="_blank" style="color: #fff; text-decoration: none;">
+                                <div class="portfolio-infront-cover">
+                                    <div class="portfolio-tile-name">Ordino Platform</div>
+                                    <div class="portfolio-tile-date">--</div>
+                                    <div class="portfolio-tile-tags">
+                                        <div class="portfolio-tile-tag" style="background-color: #a70000;">public access unavailable</div>
+                                    </div>
+                                    <div class="portfolio-tile-series"></div>
+                                </div>
+                                <div class="portfolio-behind-overlay"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-tile">
+                        <div class="portfolio-tile-top">
+                            <video class="portfolio-vid" autoplay loop muted>
+                                <source src="vids/ordino1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="portfolio-tile-cover">
+                            <div class="portfolio-infront-cover">
+                                <div class="portfolio-tile-name">Ordino Platform</div>
+                                <div class="portfolio-tile-date">--</div>
+                                <div class="portfolio-tile-tags">
+                                    <div class="portfolio-tile-tag" style="background-color: #a70000;">public access unavailable</div>
+                                </div>
+                                <div class="portfolio-tile-series"></div>
+                            </div>
+                            <div class="portfolio-behind-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-tile">
+                        <div class="portfolio-tile-top">
+                            <video class="portfolio-vid" autoplay loop muted>
+                                <source src="vids/ordino2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="portfolio-tile-cover">
+                            <div class="portfolio-infront-cover">
+                                <div class="portfolio-tile-name">Ordino Platform</div>
+                                <div class="portfolio-tile-date">--</div>
+                                <div class="portfolio-tile-tags">
+                                    <div class="portfolio-tile-tag" style="background-color: #a70000;">public access unavailable</div>
+                                </div>
+                                <div class="portfolio-tile-series"></div>
+                            </div>
+                            <div class="portfolio-behind-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-tile">
+                        <div class="portfolio-tile-top">
+                            <video class="portfolio-vid" autoplay loop muted>
+                                <source src="vids/covidindo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <a href="http://127.0.0.1:9998/" target="_blank" style="color: #fff; text-decoration: none;">
+                            <div class="portfolio-tile-cover">
+                                <div class="portfolio-infront-cover">
+                                    <div class="portfolio-tile-name">Covidindo</div>
+                                    <div class="portfolio-tile-date">August 2020</div>
+                                    <div class="portfolio-tile-tags"></div>
+                                    <div class="portfolio-tile-series">
+                                        <div class="portfolio-tile-tag" style="background-color: #16a700;">public access available</div>
+                                        <div class="portfolio-tile-tag" style="background-color: #a70000;">site no longer maintained</div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-behind-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- <div class="portfolio-row">
+                    <div class="portfolio-tile">
+                        <div class="portfolio-tile-top">
+                            <video class="portfolio-vid" autoplay loop muted>
+                                <source src="vids/ordino1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="portfolio-tile-cover">
+                            <div class="portfolio-infront-cover">
+                                <div class="portfolio-tile-name">Ordino Platform</div>
+                                <div class="portfolio-tile-date">--</div>
+                                <div class="portfolio-tile-tags"></div>
+                                <div class="portfolio-tile-series"></div>
+                            </div>
+                            <div class="portfolio-behind-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="portfolio-tile">
+                        <div class="portfolio-tile-top">
+                            <video class="portfolio-vid" autoplay loop muted>
+                                <source src="vids/ordino1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="portfolio-tile-cover">
+                            <div class="portfolio-infront-cover">
+                                <div class="portfolio-tile-name">Ordino Platform</div>
+                                <div class="portfolio-tile-date">--</div>
+                                <div class="portfolio-tile-tags"></div>
+                                <div class="portfolio-tile-series"></div>
+                            </div>
+                            <div class="portfolio-behind-overlay"></div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- <div class="divider" id="divider2">
+        <div id="divider-inner" style="opacity: 0.6;"></div>
+        <div id="divider-contents">
+            <div id="contactd-top">
+                <div id="contactd-divider-date">Got a question?</div>
+                <div id="contactd-divider-email">
+                    <div id="send-email">
+                        <div id="send-email-icon"></div>
+                        <div id="send-email-txt">Send me an email</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="full-panel" id="lets-connect">
+
+        <div class="lc-left">
+
+            <div class="lc-header-new">Connect with me</div>
+            <!-- <div class="lc-header"></div> -->
+            <div class="lc-subheader">... or you  get in touch with me directly. <br><br>I would love to hear your ideas!<br>Please send me an email at:</div>
+
+            <div class="lc-email">
+                <div class="lc-email-icon"></div>
+                <a style="color: #fff; text-decoration: none;" href="mailto:nicholas@nicarchives.com">
+                    <div class="lc-email-txt">nicholas@nicarchives.com</div>
+                </a>
+                <div class="lc-email-icon" style="background-image: url('pics/arrow_w.png'); width: 40px;"></div>
+            </div>
+
+            <div class="lc-subheader">And I can answer your project enquiries, including pricing.<br>If you're in Melbourne, coffee meetings are on me!</div>
+
+        </div
+        ><div class="lc-right">
+
+            <div class="divider-abc-inner"></div>
+            <div class="lc-tiles-container">
+                <a href="https://github.com/nickS1337" target="_blank">
+                    <div class="lc-tile" id="github">
+                        <div class="github-txt" id="github-txt"></div>
+                        <div class="lc-tile-background" id="github-background"></div>
+                        <div class="lc-tile-top">
+        
+                            <div class="lc-tile-icon" style="background-image: url('pics/github_w.png')"></div>
+                            <div class="lc-tile-text">Github</div>
+                            <div class="lc-tile-link"></div>
+        
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/nicholas-smith-a599901a8/" target="_blank">
+                    <div class="lc-tile" id="linkedin">
+                        <div class="github-txt" id="linkedin-txt"></div>
+                        <div class="lc-tile-background"></div>
+                        <div class="lc-tile-top">
+        
+                            <div class="lc-tile-icon" style="background-image: url('pics/linkedin_w.png')"></div>
+                            <div class="lc-tile-text">LinkedIn</div>
+                            <div class="lc-tile-link"></div>
+        
+                        </div>
+                    </div>
+                </a>
+                <a href="https://stackoverflow.com/users/5488863/nicholas-smith" target="_blank">
+                    <div class="lc-tile" style="margin-right: 0px;">
+                        <div class="github-txt" id="stackoverflow-txt"></div>
+                        <div class="lc-tile-background"></div>
+                        <div class="lc-tile-top">
+        
+                            <div class="lc-tile-icon" style="background-image: url('pics/stackoverflow_w.png')"></div>
+                            <div class="lc-tile-text">StackOverflow</div>
+                            <div class="lc-tile-link"></div>
+        
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="random-divider">
+        <div class="divider-abc-inner"></div>
+    </div>
+
+    <div class="full-panel" id="footer">
+
+        <!-- <div class="divider-abc-inner" id="footer-blur"></div>
+        <div class="divider-abc-inner"></div> -->
+        <div class="footer-inner">
+
+            <div class="cringe-quote">Using my passion for yours.<br>Expanding the web.</div>
+
+            <div class="footer-column" style="margin-left: 0px; text-align: right;">
+                
+                <div class="footer-column-header">nicarchives.com</div>
+                <!-- <div class="navigator-item" id="navigator-logo" style="margin-left: auto"></div> -->
+                <div class="footer-column-text">2022</div>
+                <div class="footer-column-text">Made in Melbourne</div><br>
+                <div class="navigator-item" id="navigator-logo"></div>
+
+            </div>
+
+            <div class="footer-column">
+                
+                <div class="footer-column-header">About me</div>
+                <!-- <div class="navigator-item" id="navigator-logo" style="margin-left: auto"></div> -->
+                <div class="footer-column-text">Nicholas Smith is a software freelance developer based in Melbourne, Australia. <br><br>He currently has keen interests in web-based technologies and their real-world applications, as well as social-good-style projects.</div>
+
+            </div>
+
+            <div class="footer-column" style="border-right: 0px;">
+                
+                <div id="back-to-top">Back to top</div>
+                <div id="footer-open-work" class="green">Open for work</div>
+
+                <div id="sultan-credits">Credits to my friend <a style="font-weight: 400; color: #fff; text-decoration: none;;" href="https://www.instagram.com/sultan_capture/" target="_blank">Mahran Sultan</a><br>for the pictures in this portfolio</div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+
+</html>
